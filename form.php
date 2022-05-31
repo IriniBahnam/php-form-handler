@@ -68,36 +68,20 @@
       <h2>PHP Form Handler</h2>
 
       <?php
-        if(isset($_POST["FirstName"])){//show data
-            echo $_POST["FirstName"];
-        }else{//show form
-            echo '
-                    <form method="post" action="">
-                        <div class="mb-3 mt-3">
-                            <label for="FirstName">First Name:</label>
-                            <input type="text" class="form-control" id="FirstName" placeholder="Enter your first name" name="FirstName">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                ';
-        }
-
+      if(isset($_POST["FirstName"])){//show data
+        echo $_POST["FirstName"];
+      }else{//show form
+        echo '
+          <form method="post" action="">
+                <div class="mb-3 mt-3">
+                <lablel for="FirstName">First Name:</label>
+                <input type="text" name="FirstName" /></p>
+                <p><input type="text" class="form-control" id="FirstName" placeholder="Enter you First Name" name="FirstName">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+           </form> 
+            ';
+      }
+    
       ?>
-
-
-
-
-
-
-
-
-    </div>
-  </div>
-</div>
-
-<div class="mt-5 p-4 bg-dark text-white text-center">
-  <p>Footer</p>
-</div>
-
-</body>
-</html>
